@@ -34,7 +34,6 @@
     height: $place-tab-height;
     background-color: #03b753;
 
-    }
     .tab-inner {
       display: flex;
       justify-content: space-between;
@@ -68,6 +67,8 @@
         line-height: $place-tab-height;
       }
     }
+  }
+    
 }
 
 
