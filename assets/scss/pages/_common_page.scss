@@ -1,7 +1,10 @@
 .container {
-  padding-top: $place-header-height + $place-tab-height;
-  padding-bottom: $order-box-area-height;
+  min-height: 100vh; //보여지는 뷰포트에 꽉차도록 선언 
   background-color: $booking-color-border151;
+  &:not(.order){
+    padding-top: $place-header-height + $place-tab-height;
+    padding-bottom: $order-box-area-height;
+  }  
 } 
 //헤더가 fix되어있어서 패딩값을 넣어줘야하는데 이전에 헤더에서 쓴 변수들을 이용해서 줄 수 있음
 
