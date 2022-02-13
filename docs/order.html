@@ -103,7 +103,7 @@
             </div>
             <!--//담은 메뉴 있음  -->
 
-            
+
           </div>
         </div>
         <a href="#" class="btn-menu-add">
@@ -122,19 +122,38 @@
             <ul class="info-list">
               <li class="info-item">
                 <p class="info-title">일회용 수저, 포크</p>
-                <div class="option-item">
-                  <input type="radio" id="need" class="input-radio" name="disosables" checked>
-                  <label for="need" class="input-radio-button need">필요해요</label>
-                </div>
-                <div class="option-item">
-                  <input type="radio" id="no-need" class="input-radio" name="disosables">
-                  <label for="no-need" class="input-radio-button need">필요없어요</label>
+                <div class="option-group">
+                  <div class="option-item">
+                    <input type="radio" id="need" class="input-radio" name="disosables" checked>
+                    <label for="need" class="input-radio-button need">필요해요</label>
+                  </div>
+                  <div class="option-item">
+                    <input type="radio" id="no-need" class="input-radio" name="disosables">
+                    <label for="no-need" class="input-radio-button no-need">필요없어요</label>
+                  </div>
                 </div>
               </li>
+              <li class="info-item">
+                <p class="info-title">요청사항</p>
+                <input type="text" placeholder="(선택)요청사항을 입력해주세요." class="input-text">
+              </li>
+              <li class="info-item">
+                <p class="info-title">주문자 연락처 <span class="fw700 color-point">(필수)</span></p>
+                <input type="text" placeholder="연락처를 입력해 주세요." class="input-text" required>
+              </li>
+
             </ul>
           </div>
           <div class="place-map-area">
-
+            <p class="title">주문 매장 위치</p>
+            <div class="map-area">
+              <div class="place-address-box">
+                <p class="place-name">Eat Fresh Salad</p>
+                <p class="place-address">서울시 강남구 역삼동</p>
+                <p class="place-address-detail">역삼역 2번출구 PMK빌딩</p>
+              </div>
+              <img src="http://via.placeholder.com/400x170?text=map image" alt="" class="img-map">
+            </div>
           </div>
 
           <div class="agreement-area">
