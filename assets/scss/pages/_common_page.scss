@@ -31,7 +31,12 @@
   bottom: 0;
   left: 0;
   background-color: rgba(#000,0.8);
+  opacity: 1;
+  transition: opacity 0.3s ease;
   z-index: 9999;
+  &.hidden {
+    opacity: 0;
+  }
   &.light {
     background-color: rgba(#000,0.4);
     
