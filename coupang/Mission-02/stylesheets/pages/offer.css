@@ -1,0 +1,158 @@
+/* 오늘의 쇼핑 제안 */
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.today-offer-header {
+  margin-top: 100px;
+}
+
+.main-logo-img {
+  display: block;
+  width: 176px;
+  height: 40px;
+}
+
+.today-offer-section {
+  width: 1022px;
+  height: 354px;;
+  margin-top: 48px;
+}
+
+.today-offer-section .title {
+  display: block;
+  font-size: 24px;
+  line-height: 115%;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.today-offer-section .title::before{
+  content: '';
+  display: inline-block;
+  background-image: url(/assets/icon/shopping.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* today-offer-list style  */
+
+.today-offer-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.today-offer-item {
+  position: relative;
+  background-color: var(--color-white);
+  margin-right:5px;
+}
+
+.today-offer-item:last-child{
+  margin-right: 0;
+}
+
+.item-card {
+  width: 200px;
+  height: 270px;
+}
+
+.item-card a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 14px 20px 12px 14px;
+}
+
+.offer-item-contents {
+ width: 172px;
+ height: 67px;
+ /* margin: 0 14px 17px 14px; */
+}
+
+.offer-item-contents h3{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+}
+
+.offer-item-discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 30px;
+  background: var(--color-red-500);
+  color: var(--color-white);
+  border-radius: 0px 0px 4px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 3px 10px;
+}
+
+.free-txt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-gray-700);
+}
+
+.offer-item-rates {
+display: flex;
+align-items: center;
+margin-top: 4px;
+
+}
+
+.roket-badge {
+  width: 55px;
+  height: 16px;
+}
+
+.review-rate {
+  color: var(--color-gray-700);
+}
+
+.review-rate.fw700 {
+  font-weight:700;
+}
+
+.rate {
+  display: inline-block;
+  margin-right: 4px;
+  width: 68px;
+  height: 12px;
+  background-image: url(/assets/sprites/rating-stars.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rate.star-4 {
+  background-position: 0 -112px;
+}
+.rate.star-4-5 {
+  background-position: 0 -126px;
+}
+.rate.star-5 {
+  background-position: 0 -140px;
+}

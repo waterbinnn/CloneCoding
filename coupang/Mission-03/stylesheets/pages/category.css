@@ -1,0 +1,297 @@
+/* 카테고리별 추천 광고상품 */
+* {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0 auto;
+  width: 1020px;
+  height: 100vh;
+}
+
+header {
+  width: 246px;
+  height: 56px;
+  margin-top: 100px;
+}
+
+.category-best-section {
+  margin-top: 48px;
+}
+
+.category-best-headeline h2 {
+  font-size: 16px;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.category-best-headeline h3 {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.category-best-headeline h3 span{
+  margin-left: 10px;
+  color: var(--color-blue-600);
+}
+
+.category-best {
+  margin-top: 24px;
+}
+
+.houseware-section {
+  position: relative;
+  display: flex;
+  height: 634px;
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+}
+
+.category-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.category-title {
+  margin: 48px 61px 0 24px;
+}
+
+.houseware-section .category-title .title {
+  color: var(--color-brown-300);
+}
+
+.category-title .title {
+  width: 89px;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-brown-300);
+  margin-bottom: 8px;
+}
+
+.category-title .gogo {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-gray-700);
+}
+
+.category-title .gogo::after {
+content: '';
+display: inline-block;
+background-image: url(/assets/icon/angle-right-default.svg);
+background-repeat: no-repeat;
+background-size: contain;
+width: 6px;
+height: 10px;
+vertical-align: middle;
+margin-left: 4px;
+}
+
+.hot-keyword {
+  margin: 0 26px 32px 24px;
+}
+
+.hot-keyword strong {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.hashtag-group {
+  padding: 0;
+  width: 117px;
+  height: 216px;
+  margin-top: 20px;
+}
+
+.houseware-section .hashtag-item {
+  color: var(--color-brown-300);
+}
+
+ .hashtag-item {
+  float: left;
+  clear: left;
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border: 1px solid var(--color-gray-400);
+}
+
+.hashtag-item:last-child {
+  margin-bottom: 0px
+}
+
+.slide-banner {
+  position: relative;
+}
+.houseware-section .slide-banner-text {
+  background-color: var(--color-brown-300);
+
+}
+
+.slide-banner-text {
+  position: absolute;
+  bottom: 58px;
+  left: 30px;
+  width: 260px;
+  height: 90px;
+  color: var(--color-white);
+  padding: 19px 22px 20px 23px;
+  text-align: center;
+}
+
+.slide-banner-text strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.slide-banner-text p {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.indicator-group {
+  padding: 0;
+  position: absolute;
+  bottom: 22px;
+  left: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.indicate {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
+}
+
+.indicate:first-child {
+  margin-right: 8px;
+}
+
+.indicate.selected {
+  background-color: var(--color-gray-700);
+}
+
+.product-card-section {
+  padding: 9px 0 9px 16px;
+}
+
+.product-card {
+  width: 512px;
+  padding: 0;
+}
+
+.product-card-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-card-top::after{
+  content: '';
+  position: absolute;
+  border: 0.5px solid var(--color-gray-600);
+  width: 528px;
+  bottom: 0;
+  left: -16px;
+  margin-bottom: 7.97px;
+}
+
+
+.product-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.product-item {
+  width: 160px; 
+  height: 300px;
+
+}
+
+.product-item .item-img {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+
+.product-item .item-desc {
+  width: 152px;
+  margin-top: 12px;
+}
+
+.item-desc .item-title {
+font-size: 14px;
+font-weight: 400;
+line-height: 1.2;
+margin-bottom: 12px;
+}
+
+.rocket-badge {
+  padding: 6.5px 0;
+}
+
+.item-desc .discount-banner {
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--color-red-500);
+  margin-top: 12px;
+}
+.price-section {
+  margin-top: 4px;
+}
+.item-desc .item-price {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.item-desc .item-price span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
+/* 주방용품 */
+
+.kitchenware-section {
+  margin-top: 24px;
+  position: relative;
+  display: flex;
+  height: 634px;
+  border-top: 1px solid var(--color-green-700);
+  border-bottom: 1px solid var(--color-green-700);
+}
+
+.kitchenware-section .category-title .title {
+  color: var(--color-green-700);
+}
+
+.kitchenware-section .hashtag-item {
+  color: var(--color-green-700);
+}
+
+.kitchenware-section .slide-banner-text {
+  background-color: var(--color-green-700);
+
+}
