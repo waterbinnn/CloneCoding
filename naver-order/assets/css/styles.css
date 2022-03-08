@@ -1713,7 +1713,7 @@ body.scroll-off {
   padding: 24px 18px;
 }
 
-.menu-list-area.is-closed + .in-closed {
+.menu-list-area.is-closed + .is-closed {
   margin-top: 0;
   border-top: 1px solid #f2f2f2;
 }
